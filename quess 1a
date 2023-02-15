@@ -1,18 +1,33 @@
 three types of style sheet are
 
-1.Inline 
+1.Internal 
 ex:
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Inline CSS</title>
-    </head>
-      
-    <body>
-        <p style = "color:#009900; font-size:50px;
-                font-style:italic; text-align:center;">
-           Mafia:
-        </p>
-  
-    </body>
-</html>      
+	<head>
+		<title>Internal CSS</title>
+		<style>
+			.main {
+				text-align:center;
+			}
+			.GFG {
+				color:#009900;
+				font-size:50px;
+				font-weight:bold;
+			}
+			.geeks {
+				font-style:bold;
+				font-size:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "main">
+			<div class ="GFG">GeeksForGeeks</div>
+			
+			<div class ="geeks">
+				A computer science portal for geeks
+			</div>
+		</div>
+	</body>
+</html>			
